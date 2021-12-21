@@ -11,6 +11,27 @@ body{
     color: white;
 }
 
+
+/* Si écran en dessus de 800px */
+@media screen and (min-width:1140px) {
+    
+/* Le menu classique apparaît */
+.topnav #myLinks {
+    display:inline-flex !important;
+    } 
+.topnav{
+    display: flex !important;
+    flex-direction: row !important;
+}
+    
+/* Le burger disparaît */
+.topnav a.icon {
+    display:none !important;
+}
+}
+
+
+
 header{
     position: fixed;
     top: 0px;
@@ -65,8 +86,12 @@ header{
 
   h1{
       padding-left: 90px;
+                  }
+#title{
+      padding-right: 12px;
+      width: 350px;
+      
   }
-  
  
 #return{
     position: fixed;
