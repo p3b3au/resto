@@ -6,59 +6,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script src="script.js"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-    <title>Document</title>
+    <title>Mon Super Resto</title>
 </head>
 
 <body>
     <header>
-        <div id=navbar>
-            <ul>
-                <li<a href="#menus">Menus</a></li>
-                    <li><a href="#resa">Réservations</a></li>
-                    <li><a href="#horaires">Horaires</a></li>
-                    <li><a href="#ou">Où sommes-nous</a></li>
-                    <li><a href="#notre">Notre équipe</a></li>
-                    <li><a href="#reseaux">Réseaux sociaux</a></li>
 
+
+        <div class=topnav>
+            <a href="#top" class="active"><img src="img/favicon.ico"></a>
+            <h1>Mon Super Resto</h1>
+            <ul id="myLinks">
+                <li><a href="#carte" onclick="myFunction()">Menus</a></li>
+                <li><a href="#resa" onclick="myFunction()">Réservations</a></li>
+                <li><a href="#horaires" onclick="myFunction()">Horaires</a></li>
+                <li><a href="#ou" onclick="myFunction()">Où sommes-nous</a></li>
+                <li><a href="#qui" onclick="myFunction()">Notre équipe</a></li>
+                <li><a href="#social" onclick="myFunction()">Réseaux sociaux</a></li>
             </ul>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
 
     </header>
     <main>
-        <div id=menus>
+        <div id=carte>
             <h2>Nos menus</h2>
-            <div>
-                <h3>Nems</h3>
-                <div class=plat><img class=img src="./img/chinese-beef-and-veggie-soup.jpg"></div>
-                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum inventore sequi reprehenderit nisi,
-                    illo aperiam doloribus ratione deleniti distinctio maiores rem. Cum laborum nemo possimus,
-                    architecto quis dolorum suscipit numquam.</div>
+            <div class=menus>
+                <div>
+                    <h3>Nems</h3>
+                    <div class=plat><img class=img src="./img/chinese-beef-and-veggie-soup.jpg"></div>
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum inventore sequi reprehenderit
+                        nisi,
+                        illo aperiam doloribus ratione deleniti distinctio maiores rem. Cum laborum nemo possimus,
+                        architecto quis dolorum suscipit numquam.</div>
+                </div>
+                <div>
+                    <h3>Bo Bun</h3>
+                    <div class=plat><img class=img src="./img/asian-chicken-with-rice.jpg"></div>
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum inventore sequi reprehenderit
+                        nisi, illo
+                        aperiam doloribus ratione deleniti distinctio maiores rem. Cum laborum nemo possimus, architecto
+                        quis
+                        dolorum suscipit numquam.</div>
+                </div>
+                <div>
+                    <h3>Tom Kha Kai</h3>
+
+                    <div class=plat><img class=img src="./img/chopsticks-held-over-bowl-of-hot-noodle-soup.jpg"></div>
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum inventore sequi reprehenderit
+                        nisi, illo
+                        aperiam doloribus ratione deleniti distinctio maiores rem. Cum laborum nemo possimus, architecto
+                        quis
+                        dolorum suscipit numquam.</div>
+                </div>
+                <div>
+                    <h3>Pho</h3>
+
+                    <div class=plat><img class=img src="./img/a-hot-bowl-of-soup-on-a-table-top.jpg"></div>
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum inventore sequi reprehenderit
+                        nisi, illo
+                        aperiam doloribus ratione deleniti distinctio maiores rem. Cum laborum nemo possimus, architecto
+                        quis
+                        dolorum suscipit numquam.</div>
+                </div>
             </div>
-            <div>
-                <h3>Bo Bun</h3>
-            </div>
-            <div class=plat><img class=img src="./img/asian-chicken-with-rice.jpg"></div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum inventore sequi reprehenderit nisi, illo
-                aperiam doloribus ratione deleniti distinctio maiores rem. Cum laborum nemo possimus, architecto quis
-                dolorum suscipit numquam.</div>
-            <div>
-                <h3>Tom Kha Kai</h3>
-            </div>
-            <div class=plat><img class=img src="./img/chopsticks-held-over-bowl-of-hot-noodle-soup.jpg"></div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum inventore sequi reprehenderit nisi, illo
-                aperiam doloribus ratione deleniti distinctio maiores rem. Cum laborum nemo possimus, architecto quis
-                dolorum suscipit numquam.</div>
-            <div>
-                <h3>Pho</h3>
-            </div>
-            <div class=plat><img class=img src="./img/a-hot-bowl-of-soup-on-a-table-top.jpg"></div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum inventore sequi reprehenderit nisi, illo
-                aperiam doloribus ratione deleniti distinctio maiores rem. Cum laborum nemo possimus, architecto quis
-                dolorum suscipit numquam.</div>
         </div>
 
-        <hr>
+
         <div id=resa>
             <h2>Réservations (nous contacter)</h2>
             <form action="">
@@ -112,10 +130,10 @@
                     </textarea>
                     </div>
                 </div>
-                <div class=button>envoyer</div>
+                <div class=btn>envoyer</div>
             </form>
         </div>
-        <hr>
+
         <div id=horaires>
             <h2>Nos horaires</h2>
             <div>Notre restaurant est ouvert du mardi au samedi, de 11h à 23h</div>
@@ -126,43 +144,51 @@
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2783.038264678792!2d4.805093865608203!3d45.770423386199234!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf4170493513eaa9f!2sCCI%20Formation!5e0!3m2!1sfr!2sfr!4v1640077028008!5m2!1sfr!2sfr"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
-        <hr>
-        <div id=notre>
+            <div id=qui>
             <h2>Notre équipe</h2>
-            <div>
-                <h3>Bob le barman</h3>
-                <div class=team><img class=img src="./img/pexels-pixabay-35065.jpg"></div>
-                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum inventore sequi reprehenderit nisi,
-                    illo aperiam doloribus ratione deleniti distinctio maiores rem.</div>
+            <div id=theteam>
+                <div>
+                    <div><h3>Bob le barman</h3></div>
+                    <div class=team>
+                        <div><img class=img src="./img/pexels-pixabay-35065.jpg"></div>
+                     <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum inventore sequi reprehenderit
+                        nisi,
+                        illo aperiam doloribus ratione deleniti distinctio maiores rem.</div></div>
+                </div>
+                <div>
+                    <div><h3>John le chef</h3></div>
+                    <div class=team>
+                        <div><img class=img src="./img/pexels-thgusstavo-santana-1933873.jpg"></div>
+                     <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum inventore sequi reprehenderit
+                        nisi,
+                        illo aperiam doloribus ratione deleniti distinctio maiores rem.</div></div>
+                </div>
+                <div>
+                    <div><h3>Maria la serveuse</h3></div>
+                    <div class=team>
+                        <div><img class=img src="./img/pexels-vincent-tan-6934325.jpg"></div>
+                     <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum inventore sequi reprehenderit
+                        nisi,
+                        illo aperiam doloribus ratione deleniti distinctio maiores rem.</div></div>
+                </div>
+
+                
             </div>
-            <div>
-                <h3>John le chef</h3>
-                <div class=team><img class=img src="./img/pexels-thgusstavo-santana-1933873.jpg"></div>
-                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum inventore sequi reprehenderit nisi,
-                    illo aperiam doloribus ratione deleniti distinctio maiores rem.</div>
-            </div>
         </div>
-        <div>
-            <h3>Maria la serveuse</h3>
-            <div class=team><img class=img src="./img/pexels-vincent-tan-6934325.jpg"></div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum inventore sequi reprehenderit nisi, illo
-                aperiam doloribus ratione deleniti distinctio maiores rem.</div>
-        </div>
-        </div>
-        </div>
-        <hr>
+
+<div><h2>Réseaux sociaux</h2>
         <div id=social>
-            <h2>Réseaux sociaux</h2>
-            <div><i class="fab fa-twitter"></i></div>
-            <div><i class="fab fa-facebook-f"></i></div>
-            <div><i class="fab fa-instagram"></i></div>
+            <div class="btn2"><i class="fab fa-twitter"></i></div>
+            <div class="btn2"><i class="fab fa-facebook-f"></i></div>
+            <div class="btn2"><i class="fab fa-instagram"></i></div>
         </div>
-    </main>
+        </div>
+            </main>
     <footer>
 
     </footer>
 
-
+    <div id=return><a href="#top"><i class="fas fa-arrow-up"></i></a></div>
 </body>
 
 </html>

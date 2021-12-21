@@ -1,11 +1,196 @@
-#navbar{
+
+html{
+    padding: 0px;
+    margin: 0px;
 }
 
-#navbar>ul{
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: #333;
+    color: white;
+}
+
+header{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    padding-top: 0;
+    margin-top: 0px;
+}
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background: linear-gradient(0turn, rgb(4, 170, 109, 0.9) ,rgb(4, 170, 109, 1));
+    position: relative;
+    margin: 8px;
+    margin-top: 0px;    
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+ /* Style the hamburger menu */
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  
+
+    
+  .active{
+      position: absolute;
+  }
+
+  h1{
+      padding-left: 90px;
+  }
+  
+ 
+#return{
+    position: fixed;
+    right: 18px;
+    bottom: 6px;
+   }
+
+   #return i{
+    color: white;
+   }
+  
+iframe{
+    width: 100%;
+}
+
+
+
+main>div{
+    background-color: rgb(92, 91, 91);
+    margin: 8px;
+    padding:4px;
+    padding-top: 80px;
+    padding-bottom: 24px;
+ }
+ main>div:last-child{
+    padding-top: 12px;
+ }
+
+ h2{
+    padding-left: 20px;
+ }
+
+ form{
+    padding-left: 20px;
+ }
+
+#horaires>div{
+    padding-left: 20px;
+}
+
+.menus{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.menus>div{
+    border: 1px solid black;
+    width: 400px;
+    margin: 6px;
+    padding: 12px;
+}
+
+.menus h3{
+    margin-top: 0px;
+}
+
+ul{
     list-style: none;
 }
 
 .img{
     width: 90px;
     height: auto;
+}
+
+
+#theteam{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#theteam>div{
+    border: 1px solid black;
+    width: 400px;
+    margin: 6px;
+    padding: 12px;
+}
+
+#theteam h3{
+    margin-top: 0px;
+}
+
+.team{
+display: flex;
+flex-direction: row;
+}
+
+.team>div:last-child{
+    padding-left: 12px;
+    padding-top: 12px;
+   
+}
+
+#social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+#social>div{
+    margin: 13px
+}
+
+.btn{
+    border: 1px solid black;
+    width: 120px;
+    text-align: center;
+    margin: 24px;
+    padding: 4px;
+    background-color: grey;
+}
+
+.btn:hover{
+    background-color: #ddd;
+    color: black;
+    cursor: pointer;
+}
+
+.btn2:hover{
+    background-color: #ddd;
+    color: black;
+    cursor: pointer;
 }
